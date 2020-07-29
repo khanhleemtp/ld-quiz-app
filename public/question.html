@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-primary-100">
+    <div class="font-slideTwo">
+        <nav class="bg-primary-200 text-3xl grid grid-cols-2 text-center h-20 pt-4">
+            <p>Score: <span id="right-answers"></span></p>
+            <button id="start-btn" class="pb-4">Start Game</button>
+            <button id="next-btn" class="hidden pb-4">Next</button>
+        </nav>
+        <div id="text-question" class="text-center font-slideOne m-6 text-3xl">
+        </div>
+        <main id="question-container" class="hidden grid-cols-2">
+            <div class="text-6xl text-center flex flex-col items-center">
+                <div id="question" class="question-text flex justify-center pt-20">
+            
+                </div>
+                <div id="answer-buttons" class="flex justify-center mt-32">
+                    <!-- <button class="btn h-20 w-20 outline-none bg-primary-200 rounded-lg text-center shadow-md mr-10">E</button>
+                    <button class="btn h-20 w-20 outline-none bg-primary-200 rounded-lg text-center shadow-md mr-10">A</button>
+                    <button class="btn h-20 w-20 outline-none bg-primary-200 rounded-lg text-center shadow-md mr-10">O</button> -->
+                </div>
+            </div>
+            <div id="img-question" class="question-img w-3/4">
+            </div>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
